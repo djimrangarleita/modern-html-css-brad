@@ -75,6 +75,36 @@ ul {
     background-color: #f7c08a;
 }
 
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+textarea {
+    height: 150px;
+}
+
 
 /* Nav */
 
@@ -183,4 +213,71 @@ footer .copyright {
 
 footer .copyright p {
     margin-bottom: 0;
+}
+
+
+/* About page */
+
+.about-headline {
+    float: left;
+    width: 50%;
+}
+
+.about-image {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+.about-image img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.about-headline p {
+    line-height: 1.2em;
+}
+
+.l-heading {
+    font-size: 40px;
+}
+
+#testimonials {
+    height: 600px;
+    background: url("./image/test-bg.jpg") no-repeat center center/cover;
+}
+
+#testimonials h2 {
+    font-size: 38px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customer-testimonial {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.customer-testimonial img {
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/* Contact */
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
 }
