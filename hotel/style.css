@@ -118,10 +118,10 @@ textarea {
     color: #fff;
 }
 
-.main-nav h1 {
+.main-nav .logo {
     float: left;
     margin: 0;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .main-nav ul {
@@ -150,7 +150,7 @@ textarea {
 /* Hero */
 
 .hero {
-    background: url('./image/showcase.jpg');
+    background: url('./image/showcase.jpg') no-repeat center center/cover;
     min-height: calc(100vh - 67px);
 }
 
@@ -241,11 +241,12 @@ footer .copyright p {
 }
 
 .l-heading {
+    line-height: 1.2;
     font-size: 40px;
 }
 
 #testimonials {
-    height: 600px;
+    height: 100%;
     background: url("./image/test-bg.jpg") no-repeat center center/cover;
 }
 
