@@ -1,3 +1,26 @@
+/* Heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+h4 {
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+
 /* Container */
 
 .container {
@@ -5,6 +28,25 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
 
@@ -21,13 +63,10 @@
 
 /* Button */
 
-.btn,
-.btn-primary {
+.btn {
     cursor: pointer;
     display: inline-block;
     padding: 10px 30px;
-    color: #fff;
-    background-color: var(--primary-color);
     border: none;
     border-radius: 5px;
 }
@@ -40,17 +79,73 @@
     opacity: 0.9;
 }
 
-.btn-secondary {
+.btn-primary,
+.bg-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.btn-secondary,
+.bg-secondary {
     color: #fff;
     background-color: var(--secondary-color);
 }
 
-.btn-dark {
+.btn-dark,
+.bg-dark {
     color: #fff;
     background-color: var(--dark-color);
 }
 
-.btn-secondary {
-    color: var(--secondary-color);
+.btn-light,
+.bg-light {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.btn-outline {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+    color: var(--primary-color);
     background-color: #fff;
+    border: 1px solid transparent;
+}
+
+
+/* Flex columns */
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
 }

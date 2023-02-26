@@ -65,6 +65,10 @@ img {
     padding: 0 30px;
 }
 
+#home #navbar {
+    z-index: 2;
+}
+
 .navbar .logo {
     font-weight: 400;
 }
@@ -88,7 +92,10 @@ img {
 }
 
 
-/* Hero */
+/* Home */
+
+
+/* Hero section */
 
 #home header {
     background: url("../images/home/showcase.jpg") no-repeat center center / cover;
@@ -119,7 +126,7 @@ img {
     flex-direction: column;
     text-align: center;
     height: 100%;
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 .hero h1 {
@@ -130,4 +137,31 @@ img {
     font-size: 23px;
     max-width: 600px;
     margin: 20px 0 30px;
+}
+
+
+/* Icons section */
+
+.icons h3 {
+    font-weight: bold;
+}
+
+.icons i {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 15px;
+}
+
+.icons .flex-items {
+    text-align: center;
+}
+
+.icons .flex-items>div {
+    padding: 20px;
+}
+
+.flex-columns p {
+    margin: 0 0 20px;
 }
