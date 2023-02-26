@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Raleway";
+            box-sizing: border-box;
+            line-height: 1.6em;
+        }
+        
+        body {
+            background-color: #344a72;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        .wrapper {
+            max-width: 500px;
+            margin: auto;
+        }
+        
+        .form-wrapper {
+            background-color: #fff;
+            padding: 40px;
+            margin: 30px 0;
+        }
+        
+        .form-group {
+            margin: 20px 0;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #585858;
+        }
+        
+        input {
+            width: 100%;
+            border: 1px solid #c2bfbf;
+            height: 40px;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .form-wrapper input:focus {
+            border: #555 1px solid;
+        }
+        
+        input[type="button"] {
+            background-color: #49c1a2;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type="button"]:hover {
+            background-color: #37a08e;
+        }
+        
+        .form-footer {
+            font-size: 14px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        footer p {
+            color: #fff;
+        }
+        
+        footer a {
+            color: #37a08e;
+            font-weight: 700;
+        }
+    </style>
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper">
+            <h2>Sign Up</h2>
+            <p>It's free and only takes a minute</p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="text" name="confirm-password" id="confirm-password">
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Sign Up">
+                </div>
+            </form>
+            <p class="form-footer">By clicking the sign-up button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="#">Login Here</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
